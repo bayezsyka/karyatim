@@ -1,0 +1,152 @@
+{
+    "company": {
+        "name": "PT. Karyatim Mandiri Engineering",
+        "brand": "Karyatim Engineering Contractors",
+        "established_year": 2012,
+        "phone_primary": "+62 812-3171-6286",
+        "phone_secondary": "+62 851-1124-9501",
+        "email": "infokaryatimsurabaya@gmail.com",
+        "address": "Surabaya, Jawa Timur — Melayani Proyek Seluruh Indonesia",
+        "maps_url": "https://g.page/karyatimsurabaya?share",
+        "social": {
+            "instagram": "https://instagram.com/karyatimcontractor",
+            "tiktok": "https://www.tiktok.com/@kontraktorsurabayaraya",
+            "linkedin": "https://www.linkedin.com/company/karyatim",
+            "facebook": "https://facebook.com/kontraktorkaryatim"
+        }
+    },
+    "stats": {
+        "years_experience": "12+",
+        "projects_completed": "150+",
+        "corporate_clients": "35+",
+        "safety_record": "Zero Accident"
+    },
+    "service_categories": [
+        {
+            "id": "sipil",
+            "name": "Sipil & Gedung Komersial",
+            "slug": "sipil-dan-gedung-komersial",
+            "description": "Konstruksi menyeluruh untuk fasilitas pabrik, bangunan kantor bertingkat, ruko, dan sarana umum."
+        },
+        {
+            "id": "baja",
+            "name": "Konstruksi Rangka Struktur Baja",
+            "slug": "konstruksi-rangka-struktur-baja",
+            "description": "Fabrikasi dan ereksi baja berat WF/H-Beam bentang lebar untuk gudang logistik dan workshop pabrik."
+        },
+        {
+            "id": "jalan",
+            "name": "Rigid Pavement & Pengaspalan Hotmix",
+            "slug": "rigid-pavement-dan-pengaspalan-hotmix",
+            "description": "Pengecoran jalan beton mutu tinggi K-350 wiremesh dan pelapisan aspal panas AC-WC."
+        },
+        {
+            "id": "acp",
+            "name": "Pemasangan Facade ACP & Kaca Tempered",
+            "slug": "pemasangan-facade-acp-dan-kaca-tempered",
+            "description": "Pemasangan panel Seven PVDF, curtain wall kaca stopsol, dan framing hollow galvanis."
+        },
+        {
+            "id": "epoxy",
+            "name": "Lantai Epoxy & Coating Industri",
+            "slug": "lantai-epoxy-dan-coating-industri",
+            "description": "Epoxy self-leveling food grade, epoxy mortar heavy duty, dan polyurethane coating."
+        },
+        {
+            "id": "waterproofing",
+            "name": "Waterproofing Membran & Coating",
+            "slug": "waterproofing-membran-dan-coating",
+            "description": "Membran bakar torch-on 3mm granule, semen polyurethane, dan injeksi celah beton."
+        },
+        {
+            "id": "interior",
+            "name": "Interior Office Fit-Out & Partisi Ruang",
+            "slug": "interior-office-fit-out-dan-partisi",
+            "description": "Partisi gypsum peredam, drop ceiling akustik, lantai vinyl SPC, dan custom furniture HPL."
+        },
+        {
+            "id": "railing",
+            "name": "Kanopi Baja, Railing & Stainless Steel",
+            "slug": "kanopi-baja-railing-dan-stainless-steel",
+            "description": "Kanopi carport WF/hollow, railing tangga darurat, pagar industri, dan stainless SUS 304."
+        },
+        {
+            "id": "retail",
+            "name": "Retail Outlet & Branding Storefront",
+            "slug": "retail-outlet-dan-branding-storefront",
+            "description": "Mall store fit-out, storefront kaca tempered, signage akrilik 3D neon, dan furniture display."
+        },
+        {
+            "id": "mep",
+            "name": "Elektrikal MEP, CCTV & Keamanan Industri",
+            "slug": "elektrikal-mep-cctv-dan-keamanan-industri",
+            "description": "Panel LVMDP/SDP, cable tray, grounding rod tembaga, dan IP CCTV kamera pengawas terpusat."
+        }
+    ],
+    "clients": [
+        {
+            "name": "PT Nippon Indosari Corpindo Tbk (Sari Roti)",
+            "sector": "Food & Beverage / Manufaktur"
+        },
+        {
+            "name": "PT HM Sampoerna Tbk",
+            "sector": "FMCG / Fasilitas Industri"
+        },
+        {
+            "name": "PT Greenfields Dairy Indonesia",
+            "sector": "Dairy & Agro Industri"
+        },
+        {
+            "name": "A.P. Moller – Maersk Indonesia",
+            "sector": "Shipping & Global Logistics"
+        },
+        {
+            "name": "PT PP Properti Tbk (BUMN)",
+            "sector": "Konstruksi & Properti"
+        },
+        {
+            "name": "PT Pegadaian (Persero)",
+            "sector": "BUMN / Jasa Keuangan"
+        },
+        {
+            "name": "PT Indofood CBP Sukses Makmur Tbk",
+            "sector": "Consumer Goods & Pabrik"
+        },
+        {
+            "name": "PT Nutrifood Indonesia",
+            "sector": "Health & Food Manufacturing"
+        },
+        {
+            "name": "PT Ninja Express Logistik",
+            "sector": "Supply Chain & Pergudangan"
+        },
+        {
+            "name": "Maison Féerie",
+            "sector": "Commercial Bakery & Retail"
+        },
+        {
+            "name": "Diamond Cold Storage / Diamond Fair",
+            "sector": "Cold Chain Logistics & Retail"
+        },
+        {
+            "name": "PT Bhirawa Steel (Hutama Karya Group)",
+            "sector": "Industri Baja & Manufaktur"
+        },
+        {
+            "name": "Universitas Surabaya (UBAYA)",
+            "sector": "Fasilitas Pendidikan Tinggi"
+        },
+        {
+            "name": "Kamadjaja Logistics",
+            "sector": "Freight Forwarding & Logistik"
+        },
+        {
+            "name": "PAI Indonesia",
+            "sector": "Automotive & Industrial Supply"
+        },
+        {
+            "name": "Yasa Sampoerna Strategic",
+            "sector": "Holding & Komersial"
+        }
+    ]
+}
