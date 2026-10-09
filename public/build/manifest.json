@@ -1,124 +1,124 @@
 {
-  "_AppLayout-Djhymoz3.js": {
-    "file": "assets/AppLayout-Djhymoz3.js",
+  "_AppLayout-BaZsJZ_h.js": {
+    "file": "assets/AppLayout-BaZsJZ_h.js",
     "name": "AppLayout",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_ClientLogoGrid-D6eq_X7T.js": {
-    "file": "assets/ClientLogoGrid-D6eq_X7T.js",
+  "_ClientLogoGrid-Nqb0UQ_-.js": {
+    "file": "assets/ClientLogoGrid-Nqb0UQ_-.js",
     "name": "ClientLogoGrid",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_ProjectCard-D7sjtYO1.js": {
-    "file": "assets/ProjectCard-D7sjtYO1.js",
+  "_ProjectCard-C-JZe7iM.js": {
+    "file": "assets/ProjectCard-C-JZe7iM.js",
     "name": "ProjectCard",
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-Djhymoz3.js"
+      "_AppLayout-BaZsJZ_h.js"
     ]
   },
-  "_arrow-left-BF3CCnRm.js": {
-    "file": "assets/arrow-left-BF3CCnRm.js",
+  "_arrow-left-hZ9MCq6G.js": {
+    "file": "assets/arrow-left-hZ9MCq6G.js",
     "name": "arrow-left",
     "imports": [
-      "_AppLayout-Djhymoz3.js"
+      "_AppLayout-BaZsJZ_h.js"
     ]
   },
-  "_arrow-right-CSZFtgBm.js": {
-    "file": "assets/arrow-right-CSZFtgBm.js",
+  "_arrow-right-Hb3YApVL.js": {
+    "file": "assets/arrow-right-Hb3YApVL.js",
     "name": "arrow-right",
     "imports": [
-      "_AppLayout-Djhymoz3.js"
+      "_AppLayout-BaZsJZ_h.js"
     ]
   },
   "resources/js/Pages/About/Index.jsx": {
-    "file": "assets/Index-DNJpl37v.js",
+    "file": "assets/Index-DKpogcEv.js",
     "name": "Index",
     "src": "resources/js/Pages/About/Index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-Djhymoz3.js",
-      "_ClientLogoGrid-D6eq_X7T.js"
+      "_AppLayout-BaZsJZ_h.js",
+      "_ClientLogoGrid-Nqb0UQ_-.js"
     ]
   },
   "resources/js/Pages/Contact/Index.jsx": {
-    "file": "assets/Index-C8H48YMv.js",
+    "file": "assets/Index-B1I8Wjq-.js",
     "name": "Index",
     "src": "resources/js/Pages/Contact/Index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-Djhymoz3.js"
+      "_AppLayout-BaZsJZ_h.js"
     ]
   },
   "resources/js/Pages/Home.jsx": {
-    "file": "assets/Home-D3SLN8-R.js",
+    "file": "assets/Home-BjDPBsrO.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-Djhymoz3.js",
-      "_ProjectCard-D7sjtYO1.js",
-      "_ClientLogoGrid-D6eq_X7T.js",
-      "_arrow-right-CSZFtgBm.js"
+      "_AppLayout-BaZsJZ_h.js",
+      "_ProjectCard-C-JZe7iM.js",
+      "_ClientLogoGrid-Nqb0UQ_-.js",
+      "_arrow-right-Hb3YApVL.js"
     ]
   },
   "resources/js/Pages/Projects/Index.jsx": {
-    "file": "assets/Index-Dmaa0pgB.js",
+    "file": "assets/Index-C_TLXTqG.js",
     "name": "Index",
     "src": "resources/js/Pages/Projects/Index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-Djhymoz3.js",
-      "_ProjectCard-D7sjtYO1.js"
+      "_AppLayout-BaZsJZ_h.js",
+      "_ProjectCard-C-JZe7iM.js"
     ]
   },
   "resources/js/Pages/Projects/Show.jsx": {
-    "file": "assets/Show-D-2GLXvj.js",
+    "file": "assets/Show-vA5SBj0P.js",
     "name": "Show",
     "src": "resources/js/Pages/Projects/Show.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-Djhymoz3.js",
-      "_ProjectCard-D7sjtYO1.js",
-      "_arrow-left-BF3CCnRm.js",
-      "_arrow-right-CSZFtgBm.js"
+      "_AppLayout-BaZsJZ_h.js",
+      "_ProjectCard-C-JZe7iM.js",
+      "_arrow-left-hZ9MCq6G.js",
+      "_arrow-right-Hb3YApVL.js"
     ]
   },
   "resources/js/Pages/Services/Index.jsx": {
-    "file": "assets/Index-D0s_UCoL.js",
+    "file": "assets/Index-KpXD3q_z.js",
     "name": "Index",
     "src": "resources/js/Pages/Services/Index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-Djhymoz3.js",
-      "_arrow-right-CSZFtgBm.js"
+      "_AppLayout-BaZsJZ_h.js",
+      "_arrow-right-Hb3YApVL.js"
     ]
   },
   "resources/js/Pages/Services/Show.jsx": {
-    "file": "assets/Show-Cww7Lf5s.js",
+    "file": "assets/Show-DmRwOB5N.js",
     "name": "Show",
     "src": "resources/js/Pages/Services/Show.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-Djhymoz3.js",
-      "_ProjectCard-D7sjtYO1.js",
-      "_arrow-left-BF3CCnRm.js",
-      "_arrow-right-CSZFtgBm.js"
+      "_AppLayout-BaZsJZ_h.js",
+      "_ProjectCard-C-JZe7iM.js",
+      "_arrow-left-hZ9MCq6G.js",
+      "_arrow-right-Hb3YApVL.js"
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-C7j6K0bZ.js",
+    "file": "assets/app-DNUaEiFN.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
@@ -132,7 +132,7 @@
       "resources/js/Pages/Services/Show.jsx"
     ],
     "css": [
-      "assets/app-YG6qvjns.css"
+      "assets/app-RFGIJG2o.css"
     ]
   }
 }

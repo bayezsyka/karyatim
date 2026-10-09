@@ -20,6 +20,7 @@ Route::get('/layanan/{slug}', [ServiceController::class, 'show'])->name('service
 
 // About & Track Record
 Route::get('/tentang-kami', [AboutController::class, 'index'])->name('about');
+Route::redirect('/tentang', '/tentang-kami');
 
 // Contact & Estimation Request
 Route::get('/kontak', [InquiryController::class, 'index'])->name('contact');
