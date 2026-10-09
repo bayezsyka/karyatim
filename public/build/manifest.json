@@ -1,164 +1,124 @@
 {
-  "_AppLayout-bIr6vaye.js": {
-    "file": "assets/AppLayout-bIr6vaye.js",
+  "_AppLayout-Djhymoz3.js": {
+    "file": "assets/AppLayout-Djhymoz3.js",
     "name": "AppLayout",
     "imports": [
       "resources/js/app.jsx"
     ]
   },
-  "_ClientLogoGrid-CwCbZIh-.js": {
-    "file": "assets/ClientLogoGrid-CwCbZIh-.js",
+  "_ClientLogoGrid-D6eq_X7T.js": {
+    "file": "assets/ClientLogoGrid-D6eq_X7T.js",
     "name": "ClientLogoGrid",
     "imports": [
-      "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js",
-      "_briefcase-CqIin_xG.js"
+      "resources/js/app.jsx"
     ]
   },
-  "_EstimationCalculator-BWfM5M90.js": {
-    "file": "assets/EstimationCalculator-BWfM5M90.js",
-    "name": "EstimationCalculator",
-    "imports": [
-      "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js",
-      "_shield-auQwVXuc.js"
-    ]
-  },
-  "_ProjectCard-BRp9u063.js": {
-    "file": "assets/ProjectCard-BRp9u063.js",
+  "_ProjectCard-D7sjtYO1.js": {
+    "file": "assets/ProjectCard-D7sjtYO1.js",
     "name": "ProjectCard",
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js"
+      "_AppLayout-Djhymoz3.js"
     ]
   },
-  "_arrow-down-to-line-CILcl0bm.js": {
-    "file": "assets/arrow-down-to-line-CILcl0bm.js",
-    "name": "arrow-down-to-line",
-    "imports": [
-      "_AppLayout-bIr6vaye.js"
-    ]
-  },
-  "_arrow-left-CZdFZr9m.js": {
-    "file": "assets/arrow-left-CZdFZr9m.js",
+  "_arrow-left-BF3CCnRm.js": {
+    "file": "assets/arrow-left-BF3CCnRm.js",
     "name": "arrow-left",
     "imports": [
-      "_AppLayout-bIr6vaye.js"
+      "_AppLayout-Djhymoz3.js"
     ]
   },
-  "_briefcase-CqIin_xG.js": {
-    "file": "assets/briefcase-CqIin_xG.js",
-    "name": "briefcase",
+  "_arrow-right-CSZFtgBm.js": {
+    "file": "assets/arrow-right-CSZFtgBm.js",
+    "name": "arrow-right",
     "imports": [
-      "_AppLayout-bIr6vaye.js"
-    ]
-  },
-  "_shield-auQwVXuc.js": {
-    "file": "assets/shield-auQwVXuc.js",
-    "name": "shield",
-    "imports": [
-      "_AppLayout-bIr6vaye.js"
-    ]
-  },
-  "_wrench--vh7PAU6.js": {
-    "file": "assets/wrench--vh7PAU6.js",
-    "name": "wrench",
-    "imports": [
-      "_AppLayout-bIr6vaye.js"
+      "_AppLayout-Djhymoz3.js"
     ]
   },
   "resources/js/Pages/About/Index.jsx": {
-    "file": "assets/Index-C50_oAYb.js",
+    "file": "assets/Index-DNJpl37v.js",
     "name": "Index",
     "src": "resources/js/Pages/About/Index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js",
-      "_ClientLogoGrid-CwCbZIh-.js",
-      "_arrow-down-to-line-CILcl0bm.js",
-      "_briefcase-CqIin_xG.js"
+      "_AppLayout-Djhymoz3.js",
+      "_ClientLogoGrid-D6eq_X7T.js"
     ]
   },
   "resources/js/Pages/Contact/Index.jsx": {
-    "file": "assets/Index-B7a4O4x8.js",
+    "file": "assets/Index-C8H48YMv.js",
     "name": "Index",
     "src": "resources/js/Pages/Contact/Index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js",
-      "_EstimationCalculator-BWfM5M90.js",
-      "_shield-auQwVXuc.js"
+      "_AppLayout-Djhymoz3.js"
     ]
   },
   "resources/js/Pages/Home.jsx": {
-    "file": "assets/Home-CHNDaICR.js",
+    "file": "assets/Home-D3SLN8-R.js",
     "name": "Home",
     "src": "resources/js/Pages/Home.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js",
-      "_ClientLogoGrid-CwCbZIh-.js",
-      "_ProjectCard-BRp9u063.js",
-      "_EstimationCalculator-BWfM5M90.js",
-      "_shield-auQwVXuc.js",
-      "_wrench--vh7PAU6.js",
-      "_briefcase-CqIin_xG.js"
+      "_AppLayout-Djhymoz3.js",
+      "_ProjectCard-D7sjtYO1.js",
+      "_ClientLogoGrid-D6eq_X7T.js",
+      "_arrow-right-CSZFtgBm.js"
     ]
   },
   "resources/js/Pages/Projects/Index.jsx": {
-    "file": "assets/Index-DzvB6NYq.js",
+    "file": "assets/Index-Dmaa0pgB.js",
     "name": "Index",
     "src": "resources/js/Pages/Projects/Index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js",
-      "_ProjectCard-BRp9u063.js",
-      "_arrow-down-to-line-CILcl0bm.js"
+      "_AppLayout-Djhymoz3.js",
+      "_ProjectCard-D7sjtYO1.js"
     ]
   },
   "resources/js/Pages/Projects/Show.jsx": {
-    "file": "assets/Show-cRXTKgyR.js",
+    "file": "assets/Show-D-2GLXvj.js",
     "name": "Show",
     "src": "resources/js/Pages/Projects/Show.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js",
-      "_ProjectCard-BRp9u063.js",
-      "_arrow-left-CZdFZr9m.js"
+      "_AppLayout-Djhymoz3.js",
+      "_ProjectCard-D7sjtYO1.js",
+      "_arrow-left-BF3CCnRm.js",
+      "_arrow-right-CSZFtgBm.js"
     ]
   },
   "resources/js/Pages/Services/Index.jsx": {
-    "file": "assets/Index-DL3BvSu2.js",
+    "file": "assets/Index-D0s_UCoL.js",
     "name": "Index",
     "src": "resources/js/Pages/Services/Index.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js",
-      "_shield-auQwVXuc.js",
-      "_briefcase-CqIin_xG.js",
-      "_wrench--vh7PAU6.js"
+      "_AppLayout-Djhymoz3.js",
+      "_arrow-right-CSZFtgBm.js"
     ]
   },
   "resources/js/Pages/Services/Show.jsx": {
-    "file": "assets/Show-WqCxhW9N.js",
+    "file": "assets/Show-Cww7Lf5s.js",
     "name": "Show",
     "src": "resources/js/Pages/Services/Show.jsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.jsx",
-      "_AppLayout-bIr6vaye.js",
-      "_ProjectCard-BRp9u063.js",
-      "_arrow-left-CZdFZr9m.js"
+      "_AppLayout-Djhymoz3.js",
+      "_ProjectCard-D7sjtYO1.js",
+      "_arrow-left-BF3CCnRm.js",
+      "_arrow-right-CSZFtgBm.js"
     ]
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-C-5KBWG5.js",
+    "file": "assets/app-C7j6K0bZ.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
@@ -172,7 +132,7 @@
       "resources/js/Pages/Services/Show.jsx"
     ],
     "css": [
-      "assets/app-iShQi4_Q.css"
+      "assets/app-YG6qvjns.css"
     ]
   }
 }

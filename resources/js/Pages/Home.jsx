@@ -1,320 +1,70 @@
 import React from 'react';
 import { Link } from '@inertiajs/react';
+import { ArrowRight, Download, Phone } from 'lucide-react';
 import AppLayout from '../Layouts/AppLayout';
-import StatsSection from '../Components/StatsSection';
 import ProjectCard from '../Components/ProjectCard';
 import ClientLogoGrid from '../Components/ClientLogoGrid';
-import EstimationCalculator from '../Components/EstimationCalculator';
-import { 
-    Building2, 
-    Wrench, 
-    Layers, 
-    Truck, 
-    LayoutGrid, 
-    ShieldCheck, 
-    ArrowRight, 
-    FileDown, 
-    Phone, 
-    CheckCircle2, 
-    HardHat,
-    Clock,
-    Award
-} from 'lucide-react';
 
-export default function Home({ featuredProjects, services, clients, stats, company }) {
-    const serviceIcons = {
-        'Building2': Building2,
-        'Wrench': Wrench,
-        'Layers': Layers,
-        'Truck': Truck,
-        'LayoutGrid': LayoutGrid,
-        'ShieldCheck': ShieldCheck,
-    };
-
-    const workflowSteps = [
-        {
-            num: '01',
-            title: 'Konsultasi & Survei Lokasi',
-            desc: 'Analisis kebutuhan teknis di lapangan, pengukuran luas area, dan pengecekan kondisi tanah serta akses logistik proyek.',
-        },
-        {
-            num: '02',
-            title: 'Perencanaan Struktur & RAB Transparan',
-            desc: 'Penyusunan gambar kerja, perhitungan beban struktur, spesifikasi material SNI, dan penawaran biaya detail tanpa biaya tersembunyi.',
-        },
-        {
-            num: '03',
-            title: 'Eksekusi Proyek Berstandar K3',
-            desc: 'Pengerjaan lapangan oleh tenaga ahli bersertifikat, pengawasan harian ketat, serta kepatuhan penuh terhadap jadwal kerja (S-Curve).',
-        },
-        {
-            num: '04',
-            title: 'Serah Terima & Garansi Pemeliharaan',
-            desc: 'Inspeksi akhir bersama (checklist BAST), pengujian fungsi menyeluruh, serta jaminan masa retensi dan pemeliharaan konstruksi.',
-        },
-    ];
-
+export default function Home({ featuredProjects = [], services = [], clients = [] }) {
+    const scope = services.slice(0, 4);
     return (
-        <AppLayout title="General Contractor & Civil Engineering Surabaya">
-            {/* Hero Section */}
-            <section className="relative bg-[#0c253b] text-[#fffdf8] pt-12 pb-20 sm:pt-16 sm:pb-24 border-b border-[#163e61] overflow-hidden">
-                <div className="max-w-7xl mx-auto px-4 sm:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        {/* Left Hero Text */}
-                        <div className="lg:col-span-7 space-y-6">
-                            <div className="flex items-center gap-2 text-xs font-semibold text-[#97ad82]">
-                                <HardHat className="w-4 h-4 text-[#97ad82]" />
-                                <span>PT. Karyatim Mandiri Engineering — Berpengalaman Sejak 2012</span>
-                            </div>
-
-                            <h1 className="text-3xl sm:text-5xl lg:text-5xl font-black text-[#fffdf8] tracking-tight leading-tight">
-                                Kontraktor Sipil, Struktur Baja & Fasilitas Industri Terpercaya di Surabaya
-                            </h1>
-
-                            <p className="text-base sm:text-lg text-[#e5e0d3] leading-relaxed max-w-2xl">
-                                Menyediakan solusi konstruksi terpadu untuk pembangunan gedung, fabrikasi baja bentang lebar, rigid pavement beton, pengaspalan hotmix, fasad ACP, hingga interior perkantoran dengan komitmen mutu tinggi dan kepatuhan jadwal.
-                            </p>
-
-                            {/* Trust badges */}
-                            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs text-[#e5e0d3]">
-                                <div className="flex items-center gap-2">
-                                    <CheckCircle2 className="w-4 h-4 text-[#97ad82] shrink-0" />
-                                    <span>Material Standar SNI</span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <CheckCircle2 className="w-4 h-4 text-[#97ad82] shrink-0" />
-                                    <span>Protokol K3 & Zero Accident</span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <CheckCircle2 className="w-4 h-4 text-[#97ad82] shrink-0" />
-                                    <span>RAB Transparan & Presisi</span>
-                                </div>
-                            </div>
-
-                            {/* Hero Action Buttons */}
-                            <div className="pt-4 flex flex-wrap items-center gap-4">
-                                <a
-                                    href="https://wa.me/6281231716286?text=Halo%20Tim%20Teknis%20PT.%20Karyatim%20Mandiri%20Engineering,%20saya%20ingin%20konsultasi%20kebutuhan%20proyek."
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="inline-flex items-center gap-2.5 px-6 py-3.5 text-sm font-bold text-[#081a2a] bg-[#97ad82] hover:bg-[#7a8f68] rounded transition-colors shadow-sm"
-                                >
-                                    <Phone className="w-4 h-4 text-[#081a2a]" />
-                                    <span>Konsultasi Proyek & Survei Gratis</span>
-                                    <ArrowRight className="w-4 h-4 text-[#081a2a]" />
-                                </a>
-
-                                <a
-                                    href="/downloads/Portofolio-Karyatim-Mandiri-Engineering.pdf"
-                                    download
-                                    className="inline-flex items-center gap-2 px-5 py-3.5 text-sm font-semibold text-[#fffdf8] bg-[#163e61] hover:bg-[#1f507b] rounded border border-[#1f507b] transition-colors"
-                                >
-                                    <FileDown className="w-4 h-4 text-[#97ad82]" />
-                                    <span>Unduh Portofolio PDF (24 Hal)</span>
-                                </a>
-                            </div>
+        <AppLayout title="General Contractor Surabaya">
+            <section className="bg-white">
+                <div className="grid min-h-[650px] lg:grid-cols-2">
+                    <div className="flex items-center bg-brand px-5 py-16 text-white sm:px-10 lg:px-[max(3rem,calc((100vw-82rem)/2))] lg:pr-12">
+                        <div className="kt-reveal max-w-3xl">
+                            <p className="mb-7 text-sm font-semibold text-white/80">PT. Karyatim Mandiri Engineering · Surabaya</p>
+                            <h1 className="kt-title">Kontraktor umum untuk pekerjaan bangunan, interior, dan infrastruktur.</h1>
+                            <a href="https://wa.me/6281284900094?text=Halo%20Karyatim,%20saya%20ingin%20mendiskusikan%20kebutuhan%20proyek." target="_blank" rel="noreferrer" className="kt-button kt-button-light mt-10"><Phone className="h-4 w-4" /> Konsultasikan proyek</a>
                         </div>
-
-                        {/* Right Hero Showcase Image */}
-                        <div className="lg:col-span-5">
-                            <div className="relative rounded-lg overflow-hidden border-2 border-[#163e61] shadow-2xl bg-[#081a2a]">
-                                <img
-                                    src="/images/projects/p07_1_X6.webp"
-                                    alt="Proyek Struktur Baja Karyatim"
-                                    className="w-full h-80 sm:h-96 object-cover"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#081a2a] via-transparent to-transparent opacity-80" />
-                                <div className="absolute bottom-4 left-4 right-4 bg-[#0c253b]/90 backdrop-blur-xs p-3.5 rounded border border-[#163e61] text-xs">
-                                    <div className="font-bold text-[#fffdf8] mb-0.5">
-                                        Struktur Baja Bentang Lebar & Bangunan Industri
-                                    </div>
-                                    <div className="text-[#97ad82] text-[11px]">
-                                        Dokumentasi Riil Proyek PT. Karyatim Mandiri Engineering
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    <div className="relative min-h-[430px] overflow-hidden bg-[#cfd9dd] lg:min-h-full">
+                        <img src="/images/projects/ereksi-baja-berat-mobile-crane-kato.webp" alt="Pelaksanaan ereksi struktur baja menggunakan mobile crane" className="absolute inset-0 h-full w-full object-cover" />
+                        <div className="absolute bottom-0 left-0 bg-[#073752] px-5 py-4 text-xs text-white sm:px-6">Dokumentasi pekerjaan struktur baja · Karyatim</div>
                     </div>
                 </div>
             </section>
 
-            {/* Performance Stats */}
-            <section className="max-w-7xl mx-auto px-4 sm:px-8 -mt-8 relative z-20">
-                <StatsSection stats={stats} />
-            </section>
-
-            {/* Core Services Section */}
-            <section className="py-20 max-w-7xl mx-auto px-4 sm:px-8">
-                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 pb-4 border-b border-[#e5e0d3]">
-                    <div>
-                        <h2 className="text-2xl sm:text-3xl font-black text-[#0c253b] tracking-tight">
-                            Layanan Spesialisasi Konstruksi
-                        </h2>
-                        <p className="text-sm text-[#5c6773] mt-1">
-                            Penyediaan jasa konstruksi menyeluruh dengan kapasitas teknis tinggi dan standar rekayasa teruji
-                        </p>
-                    </div>
-                    <Link
-                        href="/layanan"
-                        className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0c253b] hover:text-[#97ad82] transition-colors"
-                    >
-                        <span>Lihat Semua 12 Layanan</span>
-                        <ArrowRight className="w-4 h-4" />
-                    </Link>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {services.slice(0, 6).map((service) => {
-                        const Icon = serviceIcons[service.icon] || Building2;
-                        return (
-                            <div
-                                key={service.id}
-                                className="bg-[#ffffff] border border-[#e5e0d3] hover:border-[#0c253b] rounded-lg p-6 flex flex-col justify-between transition-all duration-200 shadow-xs"
-                            >
-                                <div>
-                                    <div className="w-12 h-12 bg-[#f7f5ef] border border-[#e5e0d3] text-[#0c253b] rounded flex items-center justify-center mb-4">
-                                        <Icon className="w-6 h-6 text-[#0c253b]" />
-                                    </div>
-                                    <h3 className="font-bold text-lg text-[#0c253b] mb-2">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-xs sm:text-sm text-[#5c6773] leading-relaxed mb-4">
-                                        {service.short_description}
-                                    </p>
-
-                                    {service.deliverables && (
-                                        <ul className="space-y-1.5 text-xs text-[#081a2a] pt-3 border-t border-[#f1ede3]">
-                                            {service.deliverables.slice(0, 3).map((item, idx) => (
-                                                <li key={idx} className="flex items-start gap-1.5">
-                                                    <CheckCircle2 className="w-3.5 h-3.5 text-[#97ad82] shrink-0 mt-0.5" />
-                                                    <span className="line-clamp-1">{item}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    )}
-                                </div>
-
-                                <div className="pt-5 mt-4 border-t border-[#f1ede3] flex items-center justify-between">
-                                    <Link
-                                        href={`/layanan/${service.slug}`}
-                                        className="text-xs font-semibold text-[#0c253b] hover:text-[#97ad82] inline-flex items-center gap-1"
-                                    >
-                                        <span>Rincian Layanan</span>
-                                        <ArrowRight className="w-3.5 h-3.5" />
-                                    </Link>
-                                    <span className="text-[11px] text-[#5c6773] font-medium">
-                                        {service.category}
-                                    </span>
-                                </div>
-                            </div>
-                        );
-                    })}
+            <section className="border-b border-line bg-white">
+                <div className="kt-shell grid md:grid-cols-4">
+                    {scope.map((service, index) => <Link href={`/layanan/${service.slug}`} key={service.id} className="group relative flex min-h-48 flex-col justify-between overflow-hidden border-b border-line bg-[#073752] px-5 py-6 text-white md:border-b-0 md:border-r md:first:border-l">
+                        {service.image && <img src={service.image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-35 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-45" />}
+                        <span className="kt-index relative z-10 text-sm text-[#75c9ee]">{String(index + 1).padStart(2, '0')}</span>
+                        <span className="relative z-10 flex items-end justify-between gap-3 font-semibold leading-tight">{service.title}<ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" /></span>
+                    </Link>)}
                 </div>
             </section>
 
-            {/* Featured Projects Showcase */}
-            <section className="bg-[#f7f5ef] py-20 border-y border-[#e5e0d3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-8">
-                    <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12 pb-4 border-b border-[#e5e0d3]">
-                        <div>
-                            <h2 className="text-2xl sm:text-3xl font-black text-[#0c253b] tracking-tight">
-                                Dokumentasi Portofolio Proyek Unggulan
-                            </h2>
-                            <p className="text-sm text-[#5c6773] mt-1">
-                                Bukti riil pengerjaan konstruksi, struktur baja, rigid pavement, dan fit-out di lapangan
-                            </p>
-                        </div>
-                        <Link
-                            href="/proyek"
-                            className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0c253b] hover:text-[#97ad82] transition-colors"
-                        >
-                            <span>Jelajahi Semua Portofolio</span>
-                            <ArrowRight className="w-4 h-4" />
-                        </Link>
+            <section className="kt-section">
+                <div className="kt-shell">
+                    <div className="mb-12 grid gap-6 lg:grid-cols-12 lg:items-end">
+                        <h2 className="kt-section-title lg:col-span-8">Pekerjaan nyata menjadi ukuran kemampuan kami.</h2>
+                        <div className="lg:col-span-4 lg:text-right"><Link href="/proyek" className="kt-link">Lihat seluruh proyek <ArrowRight className="h-4 w-4" /></Link></div>
                     </div>
+                    <div className="kt-project-grid kt-project-grid-featured">{featuredProjects.slice(0, 6).map((project) => <ProjectCard key={project.id} project={project} />)}</div>
+                </div>
+            </section>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {featuredProjects.map((project) => (
-                            <ProjectCard key={project.id} project={project} />
-                        ))}
+            <section className="bg-[#073752] text-white">
+                <div className="kt-shell grid gap-12 py-20 lg:grid-cols-12 lg:py-28">
+                    <div className="lg:col-span-5"><h2 className="kt-section-title">Ruang lingkup yang mengikuti kebutuhan lapangan.</h2></div>
+                    <div className="lg:col-span-7">
+                        {services.slice(0, 8).map((service, index) => <Link key={service.id} href={`/layanan/${service.slug}`} className="group grid grid-cols-[3rem_1fr_auto] items-center gap-3 border-t border-white/20 py-5 last:border-b">
+                            <span className="text-xs text-[#75c9ee]">{String(index + 1).padStart(2, '0')}</span><span className="font-semibold">{service.title}</span><ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </Link>)}
+                        <Link href="/layanan" className="kt-button kt-button-light mt-8">Semua layanan <ArrowRight className="h-4 w-4" /></Link>
                     </div>
                 </div>
             </section>
 
-            {/* Interactive Estimation Calculator Section */}
-            <section className="py-20 max-w-7xl mx-auto px-4 sm:px-8">
-                <EstimationCalculator />
+            <section className="kt-section bg-white">
+                <div className="kt-shell"><ClientLogoGrid clients={clients} /></div>
             </section>
 
-            {/* Verified Corporate Clients */}
-            <section className="pb-20 max-w-7xl mx-auto px-4 sm:px-8">
-                <ClientLogoGrid clients={clients} />
-            </section>
-
-            {/* Methodology & Quality Assurance */}
-            <section className="bg-[#0c253b] text-[#fffdf8] py-20 border-t border-[#163e61]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="text-xs font-semibold text-[#97ad82] mb-2 flex items-center justify-center gap-1.5">
-                            <Clock className="w-4 h-4" />
-                            <span>Metodologi Kerja Terstruktur</span>
-                        </div>
-                        <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-[#fffdf8]">
-                            Standar Pengerjaan Proyek Karyatim
-                        </h2>
-                        <p className="text-sm text-[#e5e0d3] mt-2">
-                            Setiap proyek dijalankan melalui tahapan baku guna menjamin kepatuhan spesifikasi teknis, ketepatan jadwal, dan efisiensi biaya.
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {workflowSteps.map((step, idx) => (
-                            <div
-                                key={idx}
-                                className="bg-[#163e61]/60 border border-[#1f507b] p-6 rounded-lg relative flex flex-col justify-between"
-                            >
-                                <div>
-                                    <div className="text-2xl font-black text-[#97ad82] font-mono mb-3">
-                                        {step.num}
-                                    </div>
-                                    <h3 className="font-bold text-base text-[#fffdf8] mb-2">
-                                        {step.title}
-                                    </h3>
-                                    <p className="text-xs text-[#e5e0d3] leading-relaxed">
-                                        {step.desc}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Bottom CTA Box */}
-                    <div className="mt-16 bg-[#081a2a] border border-[#1f507b] rounded-lg p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-                        <div className="space-y-1">
-                            <h3 className="text-lg sm:text-xl font-bold text-[#fffdf8]">
-                                Siap Mendiskusikan Kebutuhan Proyek Konstruksi Anda?
-                            </h3>
-                            <p className="text-xs text-[#e5e0d3]">
-                                Tim insinyur dan estimator Karyatim siap melakukan survei lokasi dan memberikan penawaran RAB transparan.
-                            </p>
-                        </div>
-                        <div className="flex items-center gap-3 shrink-0">
-                            <a
-                                href="https://wa.me/6281231716286?text=Halo%20Tim%20Teknis%20PT.%20Karyatim%20Mandiri%20Engineering,%20saya%20ingin%20jadwalkan%20survei%20lokasi%20proyek."
-                                target="_blank"
-                                rel="noreferrer"
-                                className="px-5 py-3 text-xs font-bold text-[#081a2a] bg-[#97ad82] hover:bg-[#7a8f68] rounded transition-colors"
-                            >
-                                Hubungi via WhatsApp
-                            </a>
-                            <Link
-                                href="/kontak"
-                                className="px-5 py-3 text-xs font-semibold text-[#fffdf8] bg-[#163e61] hover:bg-[#1f507b] rounded border border-[#1f507b] transition-colors"
-                            >
-                                Formulir Konsultasi
-                            </Link>
-                        </div>
-                    </div>
+            <section className="overflow-hidden bg-[#0879b8] text-white">
+                <div className="kt-shell grid items-stretch lg:grid-cols-12">
+                    <div className="py-16 lg:col-span-7 lg:py-24"><h2 className="kt-section-title">Bawa kebutuhan awal Anda. Kami bantu membacanya sebagai pekerjaan.</h2><div className="mt-8 flex flex-wrap gap-3"><Link href="/kontak" className="kt-button kt-button-light">Hubungi Karyatim <ArrowRight className="h-4 w-4" /></Link><a href="/downloads/Portofolio-Karyatim-Mandiri-Engineering.pdf" download className="kt-button border-white/40 bg-transparent hover:bg-white/10"><Download className="h-4 w-4" /> Unduh profil</a></div></div>
+                    <div className="relative min-h-72 lg:col-span-5"><img src="/images/projects/pengawas-lapangan-site-supervisor-pabrik.webp" alt="Pengawas lapangan Karyatim di area proyek" className="absolute inset-0 h-full w-full object-cover" /></div>
                 </div>
             </section>
         </AppLayout>

@@ -1,0 +1,8 @@
+{
+  "status": "approved",
+  "seed": "654f7094",
+  "surface": "public-company-profile",
+  "direction": "site-record-board",
+  "reference": "site-record-board.png",
+  "notes": "White technical header, blue and project-photo hero, numbered scope band, large documentary gallery, restrained motion. Adapted to existing Laravel Inertia routes and real Karyatim content."
+}

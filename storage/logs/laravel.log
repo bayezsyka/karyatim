@@ -1,87 +1,19 @@
-[2026-10-08 16:00:05] production.ERROR: Class "Laravel\Sanctum\Http\Controllers\CsrfCookieController" does not exist {"exception":"[object] (ReflectionException(code: -1): Class \"Laravel\\Sanctum\\Http\\Controllers\\CsrfCookieController\" does not exist at /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php:290)
+[2026-10-09 07:03:19] local.ERROR: Command "pail" is not defined.
+
+Did you mean one of these?
+    sail:add
+    sail:install
+    sail:publish {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"pail\" is not defined.
+
+Did you mean one of these?
+    sail:add
+    sail:install
+    sail:publish at /Users/farros/Developer/karyatim/apps/profile/vendor/symfony/console/Application.php:785)
 [stacktrace]
-#0 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(290): ReflectionClass->__construct()
-#1 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(166): Illuminate\\Foundation\\Console\\RouteListCommand->isVendorRoute()
-#2 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(133): Illuminate\\Foundation\\Console\\RouteListCommand->getRouteInformation()
-#3 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->{closure:Illuminate\\Foundation\\Console\\RouteListCommand::getRoutes():133}()
-#4 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(858): array_map()
-#5 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(834): Illuminate\\Support\\Arr::map()
-#6 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(133): Illuminate\\Support\\Collection->map()
-#7 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(116): Illuminate\\Foundation\\Console\\RouteListCommand->getRoutes()
-#8 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Console\\RouteListCommand->handle()
-#9 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
-#10 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
-#11 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
-#12 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate\\Container\\BoundMethod::call()
-#13 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Console/Command.php(292): Illuminate\\Container\\Container->call()
-#14 /home/agent/projects/karyatim/vendor/symfony/console/Command/Command.php(285): Illuminate\\Console\\Command->execute()
-#15 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Console/Command.php(261): Symfony\\Component\\Console\\Command\\Command->run()
-#16 /home/agent/projects/karyatim/vendor/symfony/console/Application.php(1144): Illuminate\\Console\\Command->run()
-#17 /home/agent/projects/karyatim/vendor/symfony/console/Application.php(379): Symfony\\Component\\Console\\Application->doRunCommand()
-#18 /home/agent/projects/karyatim/vendor/symfony/console/Application.php(218): Symfony\\Component\\Console\\Application->doRun()
-#19 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run()
-#20 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate\\Foundation\\Console\\Kernel->handle()
-#21 /home/agent/projects/karyatim/artisan(16): Illuminate\\Foundation\\Application->handleCommand()
-#22 {main}
-"} 
-[2026-10-08 16:00:57] production.ERROR: include(/home/agent/projects/karyatim/vendor/composer/../../app/Http/Controllers/ArticleController.php): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(/home/agent/projects/karyatim/vendor/composer/../../app/Http/Controllers/ArticleController.php): Failed to open stream: No such file or directory at /home/agent/projects/karyatim/vendor/composer/ClassLoader.php:576)
-[stacktrace]
-#0 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(265): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
-#1 /home/agent/projects/karyatim/vendor/composer/ClassLoader.php(576): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->{closure:Illuminate\\Foundation\\Bootstrap\\HandleExceptions::forwardsTo():264}()
-#2 /home/agent/projects/karyatim/vendor/composer/ClassLoader.php(576): include('...')
-#3 /home/agent/projects/karyatim/vendor/composer/ClassLoader.php(427): {closure:Composer\\Autoload\\ClassLoader::initializeIncludeClosure():575}()
-#4 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
-#5 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1182): ReflectionClass->__construct()
-#6 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1132): Illuminate\\Routing\\Route->attributeProvidedControllerMiddleware()
-#7 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Routing/Route.php(1069): Illuminate\\Routing\\Route->controllerMiddleware()
-#8 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Routing/Router.php(846): Illuminate\\Routing\\Route->gatherMiddleware()
-#9 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(245): Illuminate\\Routing\\Router->gatherRouteMiddleware()
-#10 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(164): Illuminate\\Foundation\\Console\\RouteListCommand->getMiddleware()
-#11 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(133): Illuminate\\Foundation\\Console\\RouteListCommand->getRouteInformation()
-#12 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->{closure:Illuminate\\Foundation\\Console\\RouteListCommand::getRoutes():133}()
-#13 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(858): array_map()
-#14 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(834): Illuminate\\Support\\Arr::map()
-#15 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(133): Illuminate\\Support\\Collection->map()
-#16 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(116): Illuminate\\Foundation\\Console\\RouteListCommand->getRoutes()
-#17 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Console\\RouteListCommand->handle()
-#18 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
-#19 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
-#20 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
-#21 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate\\Container\\BoundMethod::call()
-#22 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Console/Command.php(292): Illuminate\\Container\\Container->call()
-#23 /home/agent/projects/karyatim/vendor/symfony/console/Command/Command.php(285): Illuminate\\Console\\Command->execute()
-#24 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Console/Command.php(261): Symfony\\Component\\Console\\Command\\Command->run()
-#25 /home/agent/projects/karyatim/vendor/symfony/console/Application.php(1144): Illuminate\\Console\\Command->run()
-#26 /home/agent/projects/karyatim/vendor/symfony/console/Application.php(379): Symfony\\Component\\Console\\Application->doRunCommand()
-#27 /home/agent/projects/karyatim/vendor/symfony/console/Application.php(218): Symfony\\Component\\Console\\Application->doRun()
-#28 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run()
-#29 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate\\Foundation\\Console\\Kernel->handle()
-#30 /home/agent/projects/karyatim/artisan(16): Illuminate\\Foundation\\Application->handleCommand()
-#31 {main}
-"} 
-[2026-10-08 16:01:02] production.ERROR: Class "App\Http\Controllers\ArticleController" does not exist {"exception":"[object] (ReflectionException(code: -1): Class \"App\\Http\\Controllers\\ArticleController\" does not exist at /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php:290)
-[stacktrace]
-#0 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(290): ReflectionClass->__construct()
-#1 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(166): Illuminate\\Foundation\\Console\\RouteListCommand->isVendorRoute()
-#2 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(133): Illuminate\\Foundation\\Console\\RouteListCommand->getRouteInformation()
-#3 [internal function]: Illuminate\\Foundation\\Console\\RouteListCommand->{closure:Illuminate\\Foundation\\Console\\RouteListCommand::getRoutes():133}()
-#4 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(858): array_map()
-#5 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(834): Illuminate\\Support\\Arr::map()
-#6 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(133): Illuminate\\Support\\Collection->map()
-#7 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/RouteListCommand.php(116): Illuminate\\Foundation\\Console\\RouteListCommand->getRoutes()
-#8 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Console\\RouteListCommand->handle()
-#9 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
-#10 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate\\Container\\Util::unwrapIfClosure()
-#11 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
-#12 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): Illuminate\\Container\\BoundMethod::call()
-#13 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Console/Command.php(292): Illuminate\\Container\\Container->call()
-#14 /home/agent/projects/karyatim/vendor/symfony/console/Command/Command.php(285): Illuminate\\Console\\Command->execute()
-#15 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Console/Command.php(261): Symfony\\Component\\Console\\Command\\Command->run()
-#16 /home/agent/projects/karyatim/vendor/symfony/console/Application.php(1144): Illuminate\\Console\\Command->run()
-#17 /home/agent/projects/karyatim/vendor/symfony/console/Application.php(379): Symfony\\Component\\Console\\Application->doRunCommand()
-#18 /home/agent/projects/karyatim/vendor/symfony/console/Application.php(218): Symfony\\Component\\Console\\Application->doRun()
-#19 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run()
-#20 /home/agent/projects/karyatim/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate\\Foundation\\Console\\Kernel->handle()
-#21 /home/agent/projects/karyatim/artisan(16): Illuminate\\Foundation\\Application->handleCommand()
-#22 {main}
+#0 /Users/farros/Developer/karyatim/apps/profile/vendor/symfony/console/Application.php(321): Symfony\\Component\\Console\\Application->find('pail')
+#1 /Users/farros/Developer/karyatim/apps/profile/vendor/symfony/console/Application.php(218): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /Users/farros/Developer/karyatim/apps/profile/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/farros/Developer/karyatim/apps/profile/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1243): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/farros/Developer/karyatim/apps/profile/artisan(16): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#5 {main}
 "} 

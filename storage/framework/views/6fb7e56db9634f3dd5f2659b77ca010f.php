@@ -21,9 +21,9 @@
 
         <link rel="icon" type="image/webp" href="/images/brand/karyatim-mark-blue.webp">
 
-        @viteReactRefresh
-        @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])
-        @inertiaHead
+        <?php echo app('Illuminate\Foundation\Vite')->reactRefresh(); ?>
+        <?php echo app('Illuminate\Foundation\Vite')(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"]); ?>
+        <?php $__inertiaSsrResponse = app(\Inertia\Ssr\SsrState::class)->setPage($page)->dispatch();  if ($__inertiaSsrResponse) { echo $__inertiaSsrResponse->head; } ?>
     </head>
     <body class="font-sans antialiased bg-canvas text-ink">
         <!-- IMPECCABLE DIRECTION CONTRACT
@@ -36,6 +36,7 @@
         DIALS: energy=quiet; rhythm=structured; motion=restrained.
         SEED: 654f7094.
         -->
-        @inertia
+        <?php $__inertiaSsrResponse = app(\Inertia\Ssr\SsrState::class)->setPage($page)->dispatch();  if ($__inertiaSsrResponse) { echo $__inertiaSsrResponse->body; } else { ?><script data-page="app" type="application/json"><?php echo json_encode($page, JSON_HEX_TAG); ?></script><div id="app"></div><?php } ?>
     </body>
 </html>
+<?php /**PATH /Users/farros/Developer/karyatim/apps/profile/resources/views/app.blade.php ENDPATH**/ ?>
